@@ -1,19 +1,19 @@
 public class Main {
     public static void main(String[] args) {
 
-        int initialaccount = 200; //начальный счет
-        int amoutdeposit = 2000; //сумма пополнения
-        int finalaccount = (initialaccount + amoutdeposit); // итоговый счет
-        int threshold = 1000; // порог для расчета бонусов
+        int initialAccount = 200; //начальный счет
+        int amoutDeposit = 2000; //сумма пополнения
+        int finalAccount = (initialAccount + amoutDeposit); // итоговый счет
+        int thresHold = 1000; // порог для расчета бонусов
         int amount = 100; // кол-во рублей на 1 бонусный руб
-        int bonus = (amoutdeposit / amount);
+        int bonus = (amoutDeposit / amount);
 
-        if (amoutdeposit > threshold) {
-            bonus = (amoutdeposit / amount);
+        if (amoutDeposit > thresHold) {
+            bonus = (amoutDeposit / amount);
         } else {
             bonus = 0;
         }
-        System.out.println("Итоговый счет" + finalaccount);
+        System.out.println("Итоговый счет" + finalAccount);
         System.out.println("Кол-во бонусных рублей" + bonus);
 
 
